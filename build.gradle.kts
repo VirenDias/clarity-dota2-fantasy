@@ -23,7 +23,8 @@ repositories {
 
 dependencies {
     api("com.skadistats:clarity:4.0.1")
-    api("ch.qos.logback:logback-classic:1.5.20")
+    // api("ch.qos.logback:logback-classic:1.5.20")
+    runtimeOnly("org.slf4j:slf4j-nop:2.0.13")
     annotationProcessor("com.skadistats:clarity:4.0.1")
 
     jmhRuntimeOnly("ch.qos.logback:logback-classic:1.5.20")
